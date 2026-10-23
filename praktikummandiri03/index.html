@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            width: 700px;
+            margin: auto;
+            border: 1px solid #555;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Bagian profil */
+        .profile {
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid #777;
+            padding-bottom: 15px;
+        }
+
+        .foto-profil {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #555;
+            object-fit: cover;
+        }
+
+        .biodata {
+            flex: 1;
+        }
+
+        .biodata h1 {
+            margin: 0 0 10px;
+            font-size: 25px;
+        }
+
+        .biodata p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .kategori {
+            width: 100px;
+            font-size: 12px;
+        }
+
+        /* Deskripsi */
+        .deskripsi {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        /* Konten */
+        .konten {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .video {
+            width: 45%;
+        }
+
+        .video video {
+            width: 100%;
+            height: 120px;
+            border: 1px solid #555;
+        }
+
+        .foto {
+            width: 30%;
+        }
+
+        .foto img {
+            width: 75px;
+            height: 55px;
+            object-fit: cover;
+            border: 1px solid #555;
+            margin: 3px;
+        }
+
+        /* Attachment */
+        .attachment {
+            width: 25%;
+        }
+
+        .attachment h3 {
+            font-size: 13px;
+            margin-top: 0;
+        }
+
+        .attachment a {
+            display: block;
+            font-size: 12px;
+            margin-bottom: 7px;
+            color: blue;
+        }
+
+        /* Responsive */
+        @media (max-width: 750px) {
+            .container {
+                width: 100%;
+            }
+
+            .profile,
+            .konten {
+                flex-direction: column;
+            }
+
+            .kategori,
+            .video,
+            .foto,
+            .attachment {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Profil -->
+        <div class="profile">
+
+            <img src="/praktikummandiri03/img/5.jpeg" alt="Foto Profil" class="foto-profil">
+
+            <div class="biodata">
+                <h1>Muhammad Dandi Sabil</h1>
+
+                <p>Jl. sakura No. 009</p>
+                <p>Depok, Jawa Barat</p>
+                <p>Indonesia</p>
+
+                <p>
+                    Email:
+                    <a href="mailto:dandi033@gmail.com">
+                        dandi@example.com
+                    </a>
+                </p>
+
+                <p>Telepon: 0899 3445 5443</p>
+            </div>
+
+            <div class="kategori">
+                <b>Kategori</b>
+                <p>
+                    Pelajar<br>
+                    Teknologi<br>
+                    Programming<br>
+                    Web Development
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- Deskripsi -->
+        <div class="deskripsi">
+
+            <p>
+                Saya adalah seorang mahasiswa yang memiliki ketertarikan
+                pada bidang teknologi informasi dan pengembangan perangkat
+                lunak. Saya senang mempelajari berbagai teknologi baru,
+                terutama dalam bidang pemrograman dan pengembangan website.
+            </p>
+
+            <p>
+                Selain belajar, saya juga mengembangkan berbagai proyek
+                sederhana untuk meningkatkan kemampuan dalam membuat
+                aplikasi berbasis web. Saya memiliki ketertarikan pada
+                HTML, CSS, JavaScript, PHP, dan teknologi lainnya.
+            </p>
+
+        </div>
+
+
+        <!-- Video, Foto dan Attachment -->
+        <div class="konten">
+
+            <!-- Video -->
+            <div class="video">
+                <h3>Video</h3>
+
+                <video controls>
+                    <source src="/praktikummandiri03/video/1.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video.
+                </video>
+            </div>
+
+
+            <!-- Foto -->
+            <div class="foto">
+                <h3>Foto</h3>
+
+                <img src="/praktikummandiri03/img/1.jpeg" alt="Foto 1">
+                <img src="/praktikummandiri03/img/2.jpeg" alt="Foto 2">
+                <img src="/praktikummandiri03/img/3.jpeg" alt="Foto 3">
+                <img src="/praktikummandiri03/img/4.jpeg" alt="Foto 4">
+            </div>
+
+
+            <!-- Attachment -->
+            <div class="attachment">
+                <h3>Attachments</h3>
+
+                <a href="/praktikummandiri03/img/1.jpeg" download>
+                    📎 Download file 1
+                </a>
+
+                <a href="/praktikummandiri03/img/2.jpeg" download>
+                    📎 Download file 2
+                </a>
+
+                <a href="/praktikummandiri03/img/3.jpeg" download>
+                    📎 Download file 3
+                </a>
+
+                <a href="/praktikummandiri03/img/4.jpeg" download>
+                    📎 Download file 4
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
